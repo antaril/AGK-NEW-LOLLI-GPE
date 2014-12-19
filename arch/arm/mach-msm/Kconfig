@@ -1765,6 +1765,19 @@ config MSM_DALRPC_TEST
 
 if CPU_FREQ_MSM
 
+
+config GPU_OVERCLOCK
+ 	bool "Enable GPU Overclocking option"
+ 	default n
+ 	help
+ 	  Krait 600 GPU overclocking 
+ 
+config GPU_UNDERCLOCK
+	bool "Enable GPU Underclocking option if Overclocking is enabled"
+	default n
+	help
+	  Krait 600 GPU underclocking 
+
 config MSM_CPU_FREQ_SET_MIN_MAX
 	bool "Set Min/Max CPU frequencies."
 	default n
