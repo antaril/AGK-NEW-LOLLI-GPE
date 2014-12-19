@@ -96,6 +96,8 @@ static struct dcvs_core core_list[CORES_MAX];
 static DEFINE_MUTEX(core_list_lock);
 
 static struct kobject *cores_kobj;
+
+#define DCVS_MAX_NUM_FREQS 30
 static struct dcvs_core *core_handles[CORES_MAX];
 
 static int __msm_dcvs_change_freq(struct dcvs_core *core)
