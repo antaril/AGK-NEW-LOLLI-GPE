@@ -1811,6 +1811,20 @@ config GPU_UNDERCLOCK
 	help
 	  Krait 600 GPU underclocking
 
+config INTELLI_HOTPLUG
+	bool "Intelli hotplug driver"
+	depends on HOTPLUG_CPU
+	default y
+	help
+	  An intelligent cpu hotplug driver for
+	  Low Latency Frequency Transition capable processors.
+
+config POWERSUSPEND
+	bool "Enable POWERSUSPEND"
+	default n
+	help
+	  Generic POWERSUSPEND for ARM SOCs
+
 config MSM_SLEEPER
 	bool "Limit max frequency and shut off cores while screen is off"
 	default n
